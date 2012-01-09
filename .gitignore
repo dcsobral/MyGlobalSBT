@@ -1,0 +1,6 @@
+*~
+boot/
+target/
+plugins/target/
+plugins/project/target/
+staging/
