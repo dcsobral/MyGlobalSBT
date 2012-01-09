@@ -13,3 +13,10 @@ addSbtPlugin("me.lessis" % "ls-sbt" % "0.1.1")
 resolvers += "lessis" at "http://repo.lessis.me"
 
 resolvers += "coda" at "http://repo.codahale.com"
+
+resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
+
+resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
+
+addSbtPlugin("com.jsuereth" % "sbt-git-plugin" % "0.2")
+
