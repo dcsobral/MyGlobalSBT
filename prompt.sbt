@@ -5,7 +5,11 @@ shellPrompt <<= name(name => { state: State =>
 		def buffer[T](f: => T): T = f
 	}
 	val current = """\*\s+(\w+)""".r
-	def gitBranches = ("git branch --no-color" lines_! devnull mkString)
+	def gitBranches = try { 
+	  ("git branch --no-color" lines_! devnull mkString) 
+	} catch {
+	  case ex => ("git.cmd branch --no-color" lines_! devnull mkString)
+	}
 	"%s:%s>" format (
 		name,
 		current findFirstMatchIn gitBranches map (_.group(1)) getOrElse "-"
