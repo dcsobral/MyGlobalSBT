@@ -10,13 +10,17 @@ addSbtPlugin("me.lessis" % "np" % "0.2.0")
 
 addSbtPlugin("me.lessis" % "ls-sbt" % "0.1.1")
 
-resolvers += "lessis" at "http://repo.lessis.me"
+resolvers += "ls-sbt-resolver-0" at "http://repo.lessis.me"
 
-resolvers += "coda" at "http://repo.codahale.com"
+resolvers += "ls-sbt-resolver-1" at "http://repo.codahale.com"
 
 resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
 
 resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
 addSbtPlugin("com.jsuereth" % "sbt-git-plugin" % "0.4")
+
+addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.0.7")
+
+resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 
