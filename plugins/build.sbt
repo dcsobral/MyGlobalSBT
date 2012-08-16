@@ -12,7 +12,7 @@ resolvers += "ls-sbt-resolver-0" at "http://repo.lessis.me"
 
 resolvers += "ls-sbt-resolver-1" at "http://repo.codahale.com"
 
-resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
+// resolvers += Resolver.url("scalasbt", new URL("http://scalasbt.artifactoryonline.com/scalasbt/sbt-plugin-releases"))(Resolver.ivyStylePatterns)
 
 resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
@@ -22,3 +22,8 @@ addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.0.10")
 
 resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 
+addSbtPlugin("com.typesafe.startscript" % "xsbt-start-script-plugin" % "0.5.3")
+
+addSbtPlugin("com.eed3si9n" % "sbt-man" % "0.1.0")
+
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.8.3")
