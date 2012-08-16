@@ -22,8 +22,4 @@ addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.0.10")
 
 resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 
-addSbtPlugin("com.typesafe.startscript" % "xsbt-start-script-plugin" % "0.5.3")
-
 addSbtPlugin("com.eed3si9n" % "sbt-man" % "0.1.0")
-
-addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.8.3")
