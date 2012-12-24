@@ -4,3 +4,4 @@ target/
 plugins/target/
 plugins/project/target/
 staging/
+repositories

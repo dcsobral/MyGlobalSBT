@@ -18,7 +18,7 @@ resolvers += "jgit-repo" at "http://download.eclipse.org/jgit/maven"
 
 addSbtPlugin("com.jsuereth" % "sbt-git-plugin" % "0.4")
 
-addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.0.10")
+addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.1.0")
 
 resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 
