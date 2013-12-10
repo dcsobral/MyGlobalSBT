@@ -23,7 +23,7 @@ resolvers ++= Seq(
 
 // addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "0.5.0")
 
-// addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.0.10")
+// addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.1.0")
 
 resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots"
 
